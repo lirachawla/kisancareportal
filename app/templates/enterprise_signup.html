@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style >
+    marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: #8ebf42;
+      font-family: sans-serif;  
+      }
+    body{
+      background: #76b852;
+    }
+    #dev{
+      font-family: Lexend Deca;
+      padding-top: 0;
+      float:left;
+      margin-top: 80px;
+     margin-left: 25px;
+       }
+    #im
+    {
+      
+      float:left;
+    }
+    #tu
+    {
+      text-align: center;
+      margin-left: 210px;
+      font-family: sans-serif;
+      width: 200px;
+    }
+    #kl
+    {
+       margin-top: 61px;
+    }
+    #io
+    {
+      float: right;
+      margin-right: 20px;
+      margin-top: -110px;
+    }
+     .carousel-inner img 
+     {
+     
+    width: 100%;
+    
+    }
+
+    .footer 
+    {
+     
+     left: 0;
+     bottom: 0;
+     width: 100%;
+
+     background-color: #004d1a;
+     
+     
+  }   
+    .footer li
+    {
+      color: rgba(255,255,255,.5);
+      text-decoration-color: rgba(255,255,255,.5);
+      list-style: none;
+      display: inline-block;
+      margin-bottom: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+    .nav-link:hover
+    {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    #e
+    {
+      color: black;text-shadow: 2px 2px 4px #000000;
+    }
+    #ty{
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#ty:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.sidenav {
+  height: 100%;
+  width: 215px;
+  position: relative;
+  
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ccebc5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav2 {
+  height: 680px;
+  width: 245px;
+  position: relative;
+  
+  z-index: 1;
+  float: right; 
+  top: 0;
+  left: 0;
+  background-color: #ccebc5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav2 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 a {font-size: 18px;}
+}
+
+.btn {
+  border: groove;
+  text-decoration-color: white;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+
+.CF {color: black; background-color: #ff6666; margin-left: 20px; margin-top: 10px;padding-left: 50px;padding-right: 30px;text-align: center;}
+.Rice {color: dodgerblue;}
+.Wheat {color: dodgerblue;}
+.Maize {color: dodgerblue;margin-top: 10px;margin-left: 5px;}
+.Other {color: dodgerblue;margin-top: 10px;}
+
+  </style>
+}
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-dark bg-dark" style="margin-top: -20px; background-color: #004d1a !important">
+
+    <span class="navbar-text" style="color: white;text-shadow: 2px 2px 4px #000000;">
+       WELCOME
+    </span>
+    <ul class="navbar-nav" style="background-color: #004d1a">
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;padding-bottom: 5px; text-shadow: 2px 2px 4px #000000;"><p id="date"></p>
+            <script>
+            document.getElementById("date").innerHTML = Date();
+            </script>
+          </a>
+        </li>
+    </ul>
+  </nav>
+  <div id="yu">
+    <img id="im" src="/img/jaikisan.png" alt="nbsu logo" width="140px" height="125px" style="margin-top: 20px ">
+    <h1 id="dev" style="margin-top: 50px;margin-left: 30%"><strong>Kisan Care Portal</strong></h1>
+    <h3 id="tu" style="margin-left: 43%">Govt. of Bihar</h3>
+    <img id="io" src="/img/rightlogo.png" alt="punjab govt. logo" width="100px" height="100px">
+  </div>
+
+<nav id="kl" class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-top: 0px;background-color: #004d1a !important;color: #004d1a; height: 50px; text-decoration-color:#004d1a">
+  <!-- Brand -->
+  <marquee  scrollamount="15">This is the Company Sign-up Page</marquee>
+</nav>
+&nbsp
+<center><strong><h1 style="font-weight: bolder;">Sign Up</h1></strong></center><br>
+<form action="{{url_for('main.enterprise_signup')}}" method="post">
+  <div class="comp_details">
+    <h2 class="details"><strong><center>Company Details</center></strong></h2>
+    <br><br>
+    <label for="cname"> <strong style="margin-left: 50px; font-size: 15px">Your Company's Name :</strong><span style = "color: red">*</span></label>
+    <input id="cname" type="text" name="cname" required/>
+    <label for="cmail"> <strong style="margin-left: 50px; font-size: 15px">Your Company's e-mail ID :</strong><span style = "color: red">*</span></label>
+    <input id="cmail" type="email" name="cmail" required/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="cphone"><strong style= "font-size: 15px">Company's Contact number: </strong><span style="color: red">*</span></label>
+    <input id="cphone" type="tel" name="cphone" required/>
+
+    <br><br><br>
+    <h2 class="details"><strong><center>Financial Details</center></strong></h2>
+    <br><br>
+    <label for="inv"> <strong style="margin-left: 50px; font-size: 15px">Potential Investment:</strong><span style = "color: red">*</span></label>
+    <strong style="font-weight: bolder;"> ₹ </strong>&nbsp<input id="inv" type="text" name="inv" style="width: 100px" required/> 
+    
+
+
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="cgst"><strong style= "font-size: 15px">GSTIN Number</strong><span style="color: red">*</span></label>
+    <input id="cgst" type="text" name="cgst" required/>
+
+    <br><br><br>
+    <h2><strong><center>Credentials Related Details</center></strong></h2>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <p><center><strong style="font-weight: bolder;font-style: italic; font-size: 20px;"><span style="color: red">**</span>The username for logging into the portal will be your GSTIN Number<span style="color: red">**</span></strong></center></p>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="cpass"><strong style= "font-size: 15px">Set Password</strong><span style="color: red">*</span></label>
+    <input id="cpass" type="password" name="cpass" required/>
+
+
+
+
+
+
+
+
+
+
+<button  type="submit" class="btn btn-primary btn-block btn-large" >Submit</button>
+
+
+</form>
+
+
+<br><br><br>
+<div class="footer" style="color: white;text-shadow: 2px 2px 4px #000000;">
+ <ul>
+    <li>
+      <img src="/img/cu.png" style="float: left;">
+      <p style="float: left;margin-top: 10px;color: white">+91-987654321 </p>
+    </li>
+    <li>
+      <p style="float: left;margin-top: 10px;color: white">&copy; 2020 RUBIX</p>
+    </li>
+    <li>
+      <img style="float: left;" src="/img/mail.png">
+     
+      <p style="float: left;margin-top: 10px;color: white">KCPbihar@gmail.com</p>
+    </li>
+    
+  </ul>
+</div>
+</body>
+
+</html>

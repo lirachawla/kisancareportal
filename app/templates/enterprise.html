@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KCP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function onButtonClick(){
+    document.getElementById('textInput').className="show";
+    document.getElementById('qw').className="show";
+    document.getElementById('qwe').className="show";
+    document.getElementById('qwer').className="show";
+  }
+
+  </script>
+    <style >
+      #dev{
+        font-family: Lexend Deca;
+        padding-top: 0;
+        float:left;
+        margin-top: 80px;
+       margin-left: 25px;
+         }
+      #im
+      {
+        float:left;
+      }
+      #tu
+      {
+        text-align: center;
+        margin-left: 210px;
+        font-family: sans-serif;
+        width: 200px;
+      }
+      #kl
+      {
+         margin-top: 61px;
+      }
+      #io
+      {
+        float: right;
+        margin-right: 20px;
+        margin-top: -110px;
+      }
+      .footer 
+      {
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #004d1a;
+       }   
+      .footer li
+      {
+        color: rgba(255,255,255,.5);
+        text-decoration-color: rgba(255,255,255,.5);
+        list-style: none;
+        display: inline-block;
+        margin-bottom: 0%;
+        margin-left: 2%;
+        margin-right: 3px;
+        margin-top: 1%;
+      }
+     
+      .sidebar {
+        margin-top: 12.6%;
+        height: 94.7%;
+        width: 15.8%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #76b852 !important;
+        overflow-x: hidden;
+        padding-top: 1.8%;
+      }
+
+      .sidebar a {
+        padding: 3% 3% 3% 6%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      
+
+      .sidenav2 {
+      height: 822px;
+      width: 245px;
+      position: relative;
+      
+      z-index: 1;
+      float: right; 
+      top: 0;
+      left: 0;
+      background-color: #76b852 !important;
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+
+      .sidenav2 a {
+      padding: 3% 3% 3% 6%;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      }
+
+      .sidenav2 a:hover {
+      color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav2 {padding-top: 15px;}
+        .sidenav2 a {font-size: 18px;}
+      }
+
+      .btn {
+        border: groove;
+        text-decoration-color: white;
+      }
+
+      /* On mouse-over */
+      .btn:hover {background: #eee;}
+
+      .CF {color: black; background-color: #ff6666; margin-left: -105px; margin-top: 10px;padding-left: 40px;padding-right: 30px;text-align: center;}
+      .Rice {color: dodgerblue;}
+      .Wheat {color: dodgerblue;}
+      .Maize {color: dodgerblue;margin-top: 10px;margin-left: 5px;}
+      .Other {color: dodgerblue;margin-top: 10px;}
+
+      .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-content {display: block;}
+
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      .hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+    </style>
+
+  </head>
+  <body>
+     
+     <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb" style="margin-top: 300px;margin-left: 50px"></script>
+<script>paypal.Buttons().render('body');</script> -->
+
+     <!-- top navbar welcome and date--> 
+     <nav class="navbar fixed-top navbar-dark bg-dark" style="margin-top: -20px; background-color: #004d1a !important">
+        <span class="navbar-text" style="color: white;text-shadow: 2px 2px 4px #000000;">
+           WELCOME
+        </span>
+        <ul class="navbar-nav" style="background-color: #004d1a">
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;padding-bottom: 5px; text-shadow: 2px 2px 4px #000000;"><p id="date"></p>
+                <script>
+                  document.getElementById("date").innerHTML = Date();
+                </script>
+              </a>
+            </li>
+        </ul>
+      </nav>
+
+
+     <!-- kisan care portal heading and logo-->
+      <div id="yu">
+        <img id="im" src="/img/jaikisan.png" alt="nbsu logo" width="140px" height="127px" style="margin-top: 45px ">
+          <h1 id="dev" style="margin-top: 70px;margin-left: 30%"><strong>Kisan Care Portal</strong></h1>
+          <h3 id="tu" style="margin-left: 43%">Govt. of Bihar</h3>
+        <img id="io" src="/img/rightlogo.png" alt="punjab govt. logo" width="100px" height="100px">
+      </div>
+
+
+
+     <!-- navbar containing home button , company's name and logout name-->
+      <nav id="kl" class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-top: 15px;height: 20%; background-color: #004d1a !important;color: #004d1a; text-decoration-color:#004d1a">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html"><img src="/img/download.png"></a>
+        <div style="color: white;margin-left: 41% "><b>XYZ COMPANY Ltd.</b></div>
+        <a style="margin-left: 40%;" class="navbar-brand" href="/logout_enterprise/" ><div style="color: white;  ">Logout</div>
+      </nav>
+
+
+
+     <!-- right side navbar-->
+      <div class="sidenav2">
+        <button class="btn CF"  ><b>CONTACT ADMIN</b>&nbsp&nbsp&nbsp</button>
+        <a style="color: black;padding-left: 0px; padding-top: 0px; padding-right: 0px; ">_________________________</a>
+        <button class="btn CF" onclick="onButtonClick()" style="margin-left: 10px"><b>ADD YOJNAYEIN</b>&nbsp&nbsp&nbsp&nbsp</button>
+        <form action="{{url_for('main.add_yojna')}}" method="POST">
+        <input name="name" class="hide" type="text" id="qwe" placeholder="Enter Title" style="margin: 0 auto;margin-top: 5px;">
+        <input name="description" class="hide" type="text" id="qwer" placeholder="Enter Investment" style="margin: 0 auto;margin-top: 5px;">
+        <input name="budget" class="hide" type="text" id="textInput" placeholder="Enter description here..." style="margin:0 auto;margin-top: 5px;text-align: left;padding: 0.4em;padding-bottom: 80px;"/>
+        <button class="hide" id="qw" type="Submit" onclick="onButtonClick()" style="margin-left: 25px;margin-top: 5px;">Submit</button></form>
+        <a style="color: black;padding-left: 0px; padding-top: 0px; padding-right: 0px; ">_________________________</a></button>
+        
+      </div>
+
+
+      
+     <!-- left side navbar-->
+      <div class="sidebar">
+        <ul style="font-size: 20px"><b>YOJNAYEIN</b></ul>
+        <div>______________________________________</div>
+        <div style="margin-left: 10px"><b>Registered Farmer</b></div>
+        <a style="font-size: 15px; color:red"><b>16,20,255&nbsp&nbsp&nbsp&nbsp25,40,365</b></a>
+        <div class="btn-group">
+        <button style="margin-left: 5px;">INVESTED</button>&nbsp&nbsp
+        <button>LEFT&nbsp&nbsp&nbsp</button>
+        </div>
+         <div>______________________________________</div>
+        <div style="margin-left: 10px"><b>Organic Farming Grant Application</b></div>
+        <a style="font-size: 15px;color:red"><b>15,80,255&nbsp&nbsp&nbsp&nbsp6,40,865</b></a>
+        <div class="btn-group">
+        <button style="margin-left: 5px">INVESTED</button>&nbsp&nbsp
+        <button>LEFT&nbsp&nbsp&nbsp</button>
+        </div> <div>______________________________________</div>
+        <div style="margin-left: 10px"><b>Seed grant application</b></div>        
+        <a style="font-size: 15px;color:red"><b>14,50,655&nbsp&nbsp&nbsp&nbsp55,40,365</b></a><div class="btn-group">
+        <button style="margin-left: 5px">INVESTED</button>&nbsp&nbsp
+        <button>LEFT&nbsp&nbsp&nbsp</button>
+        </div> <div>______________________________________</div>
+        <div style="margin-left: 10px"><b>Agricultural mechanization scheme</b></div>
+        <a style="font-size: 15px;color:red"><b>16,20,255&nbsp&nbsp&nbsp&nbsp25,40,365</b></a>
+        <div class="btn-group">
+        <button style="margin-left: 5px">INVESTED</button>&nbsp&nbsp
+        <button>LEFT&nbsp&nbsp&nbsp</button>
+        </div>
+        <div>______________________________________</div>
+      </div>
+
+
+
+
+     <!-- middle content-->
+      
+    <div class="dropdown">
+    <button class="dropbtn" style="margin-left: -165px;">Pending Request</button>
+    </div>
+    
+    <div class="dropdown" >
+    <button class="dropbtn" style="margin-left: 280px;margin-top: 30px;">Approved Request</button>
+    </div>
+    <br><br><br>
+    
+    <a style="margin-left: 400px"><b>&#9679&nbsp&nbspFarmer-1:Registered Farmer</b></a>
+    <a style="margin-left: 220px"><b>&#9679&nbsp&nbspFarmer-2:Registered Farmer</b></a><br><br>
+    <a style="margin-left: 400px"><b>&#9679&nbsp&nbspFarmer-3:Organic Farming Grant Application</b></a>
+    <a style="margin-left: 93px"><b>&#9679&nbsp&nbspFarmer-4:Organic Farming Grant Application</b></a><br><br>
+    <a style="margin-left: 400px"><b>&#9679&nbsp&nbspFarmer-5:Seed grant application</b></a>
+    <a style="margin-left: 185px"><b>&#9679&nbsp&nbspFarmer-6:Seed grant application</b></a><br><br>
+    <a style="margin-left: 400px"><b>&#9679&nbsp&nbspFarmer-7:Agricultural mechanization scheme</b></a>
+    <a style="margin-left: 90px"><b>&#9679&nbsp&nbspFarmer-8:Agricultural mechanization scheme</b></a>
+    
+
+
+     <!-- footer-->
+      <div class="footer" style="margin-top: 520px; color: white;text-shadow: 2px 2px 4px #000000;">
+       <ul>
+          <li>
+            <img src="/img/cu.png" style="float: left;">
+            <p style="float: left;margin-top: 10px;color: white">+91-987654321 </p>
+          </li>
+          <li>
+            <p style="float: left;margin-top: 10px;color: white">&copy; 2020 RUBIX</p>
+          </li>
+          <li>
+            <img style="float: left;" src="/img/mail.png">
+            <p style="float: left;margin-top: 10px;color: white">KCPbihar@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+  </body>
+</html>

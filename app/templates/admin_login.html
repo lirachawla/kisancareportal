@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log In / लॉग इन</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});</script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: #8ebf42;
+      font-family: sans-serif;  
+      }
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+    #dev{
+      font-family: Lexend Deca;
+      padding-top: 0;
+      float:left;
+      margin-top: 80px;
+     margin-left: 25px;
+       }
+    #im
+    {
+      
+      float:left;
+    }
+    #tu
+    {
+      text-align: center;
+      margin-left: 210px;
+      font-family: sans-serif;
+      width: 200px;
+    }
+    #kl
+    {
+       margin-top: 61px;
+    }
+    #io
+    {
+      float: right;
+      margin-right: 20px;
+      margin-top: -110px;
+    }
+     .carousel-inner img 
+     {
+     
+    width: 100%;
+    
+    }
+
+    .footer 
+    {
+     
+     left: 0;
+     bottom: 0;
+     width: 100%;
+
+     background-color: #004d1a;
+     
+     
+  }   
+    .footer li
+    {
+      color: rgba(255,255,255,.5);
+      text-decoration-color: rgba(255,255,255,.5);
+      list-style: none;
+      display: inline-block;
+      margin-bottom: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+    .nav-link:hover
+    {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    #e
+    {
+      color: black;text-shadow: 2px 2px 4px #000000;
+    }
+    #ty{
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#ty:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.sidenav {
+  height: 100%;
+  width: 215px;
+  position: relative;
+  
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ccebc5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav2 {
+  height: 680px;
+  width: 245px;
+  position: relative;
+  
+  z-index: 1;
+  float: right; 
+  top: 0;
+  left: 0;
+  background-color: #ccebc5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav2 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 a {font-size: 18px;}
+}
+
+.btn {
+  border: groove;
+  text-decoration-color: white;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+
+.CF {color: black; background-color: #ff6666; margin-left: 20px; margin-top: 10px;padding-left: 50px;padding-right: 30px;text-align: center;}
+.Rice {color: dodgerblue;}
+.Wheat {color: dodgerblue;}
+.Maize {color: dodgerblue;margin-top: 10px;margin-left: 5px;}
+.Other {color: dodgerblue;margin-top: 10px;}
+
+  </style>
+}
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-dark bg-dark" style="margin-top: -20px; background-color: #004d1a !important">
+
+    <span class="navbar-text" style="color: white;text-shadow: 2px 2px 4px #000000;">
+       WELCOME
+    </span>
+    <ul class="navbar-nav" style="background-color: #004d1a">
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;padding-bottom: 5px; text-shadow: 2px 2px 4px #000000;"><p id="date"></p>
+            <script>
+            document.getElementById("date").innerHTML = Date();
+            </script>
+          </a>
+        </li>
+    </ul>
+  </nav>
+  <div id="yu">
+    <img id="im" src="/img/jaikisan.png" alt="nbsu logo" width="140px" height="125px" style="margin-top: 20px ">
+    <h1 id="dev" style="margin-top: 50px;margin-left: 30%"><strong>Kisan Care Portal</strong></h1>
+    <h3 id="tu" style="margin-left: 43%">Govt. of Bihar</h3>
+    <img id="io" src="/img/rightlogo.png" alt="punjab govt. logo" width="100px" height="100px">
+  </div>
+
+<nav id="kl" class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-top: 0px;background-color: #004d1a !important;color: #004d1a; text-decoration-color:#004d1a">
+  <!-- Brand -->
+  <marquee  scrollamount="15">Kisan Care Portal welcomes you! Please log in here.</marquee>
+  </ul>
+
+</nav>
+<br><br>
+<center><strong><h2 style="font-weight: bold; color: #8ebf42; background: #004d1a; width:360px; height: 50px">Log in here</h2></strong></center>
+<div class="login-page" style="margin-top: -80px">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form action="{{url_for('main.admin_login')}}" method="post"><m class="login-form">
+      <input style="font-size: 15px" type="text" name="id" placeholder="username"/>
+      <input style="font-size: 15px" type="password" name="pass" placeholder="password"/>
+      <button type="submit"><strong>Log In</strong></button>
+      
+    </form>
+  </div>
+</div>
+</div>
+
+<div class="footer" style="color: white;text-shadow: 2px 2px 4px #000000;">
+ <ul>
+    <li>
+      <img src="/img/cu.png" style="float: left;">
+      <p style="float: left;margin-top: 10px;color: white">+91-987654321 </p>
+    </li>
+    <li>
+      <p style="float: left;margin-top: 10px;color: white">&copy; 2020 RUBIX</p>
+    </li>
+    <li>
+      <img style="float: left;" src="/img/mail.png">
+     
+      <p style="float: left;margin-top: 10px;color: white">KCPbihar@gmail.com</p>
+    </li>
+    
+  </ul>
+</div>
+</body>
+
+</html>

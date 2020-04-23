@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>KCP</title>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style >
+    	#dev{
+    		font-family: Lexend Deca;
+    		padding-top: 0;
+    		float:left;
+    		margin-top: 80px;
+       margin-left: 25px;
+    		 }
+    	#im
+    	{
+    		
+    		float:left;
+    	}
+    	#tu
+    	{
+    		text-align: center;
+    		margin-left: 210px;
+    		font-family: sans-serif;
+    		width: 200px;
+    	}
+    	#kl
+    	{
+         margin-top: 61px;
+    	}
+      #io
+      {
+      	float: right;
+      	margin-right: 20px;
+      	margin-top: -110px;
+      }
+       .carousel-inner img 
+       {
+       
+      width: 100%;
+      
+      }
+
+      .footer 
+      {
+  	   
+  	   left: 0;
+  	   bottom: 0;
+  	   width: 100%;
+
+  	   background-color: #004d1a;
+  	   
+  	   
+  	   }   
+      .footer li
+      {
+      	color: rgba(255,255,255,.5);
+      	text-decoration-color: rgba(255,255,255,.5);
+      	list-style: none;
+      	display: inline-block;
+      	margin-bottom: 25px;
+      	margin-left: 25px;
+      	margin-right: 25px;
+      	margin-top: 25px;
+      }
+      
+      #e
+      {
+      	color: black;text-shadow: 2px 2px 4px #000000;
+      }
+      #ty{
+      opacity: 0.7;
+      filter: alpha(opacity=70); /* For IE8 and earlier */
+      }
+
+      #ty:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+      }
+
+      .sidenav {
+        height: 680px;
+        width: 215px;
+        position: relative;
+        
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #ccebc5;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      .sidenav2 {
+        height: 680px;
+        width: 245px;
+        position: relative;
+        
+        z-index: 1;
+        float: right; 
+        top: 0;
+        left: 0;
+        background-color: #ccebc5;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav2 a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidenav2 a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav2 {padding-top: 15px;}
+        .sidenav2 a {font-size: 18px;}
+      }
+
+      .btn {
+        border: groove;
+        text-decoration-color: white;
+      }
+
+      /* On mouse-over */
+      .btn:hover {background: #eee;}
+
+      .wheat {color: black; background-color: #ff6666; margin-left: 20px; margin-top: 10px;padding-left: 50px;padding-right: 30px;text-align: center;}
+      
+    </style>
+  </head>
+  <body style="background-color: #76b852 !important;">
+    <nav class="navbar fixed-top navbar-dark bg-dark" style="margin-top: -20px; background-color: #004d1a !important">
+
+      <span class="navbar-text" style="color: white;text-shadow: 2px 2px 4px #000000;">
+        WELCOME
+      </span>
+      <ul class="navbar-nav" style="background-color: #004d1a">
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;padding-bottom: 5px; text-shadow: 2px 2px 4px #000000;"><p id="date"></p>
+            <script>
+            document.getElementById("date").innerHTML = Date();
+            </script>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  	
+    <div id="yu">
+    	<img id="im" src="/img/jaikisan.png" alt="nbsu logo" width="140px" height="127px" style="margin-top: 45px ">
+    	<h1 id="dev" style="margin-top: 70px;margin-left: 30%"><strong>Kisan Care Portal</strong></h1>
+    	<h3 id="tu" style="margin-left: 43%">Govt. of Bihar</h3>
+    	<img id="io" src="/img/rightlogo.png" alt="punjab govt. logo" width="130px" height="127px" style="margin-right: 0px; margin-top:-120px;">
+    </div>
+    <nav id="kl" class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-top: 15px;height:20%; background-color: #004d1a !important; text-decoration-color:#004d1a">
+      <marquee style=" color:white; " behavior="scroll" direction="left">
+        किसान देखभाल पोर्टल में आपका स्वागत है</marquee>
+    </nav>
+
+    
+
+
+    
+
+    <!--<button  class="btn Wheat" style="padding-right: 6px; padding-left: 6px" onClick="javascript:close_clip()"><img src="/img/farmericon.png" /></button>
+    <button  class="btn Wheat" style="padding-right: 6px; padding-left: 6px" onClick="javascript:close_clip()"><img src="/img/farmericon.png" /></button>
+    <form action="/action_page.php">
+      <input type="image" src="/img/farmericon.png" alt="Submit" width="48" height="48">
+    </form>
+    <form action="/action_page.php">
+      <input type="image" src="/img/farmericon.png" alt="Submit" width="48" height="48">
+    </form>
+    <div class="sidenav">-->
+      
+  
+
+    <a href="/farmer_login/">
+      <img style="margin-left: 440px; position: relative;margin-top: 100px;" border="20" alt="W3Schools" src="/img/farmericon.png" width="300" height="300">
+    </a>
+    <a href="/admin_login/">
+      <img border="20" alt="W3Schools" style="margin-left: 50px; position: relative; margin-top: 100px;" src="/img/adminlogo.png" width="300" height="300">
+    </a>
+     <a href="/enterprise_login/">
+      <img border="20" alt="W3Schools" style="margin-left: 50px; position: relative; margin-top: 100px;" src="/img/privatelogo.png" width="300" height="300">
+    </a>
+
+
+    <div class="footer" style="color: white;margin-top: 150px; text-shadow: 2px 2px 4px #000000;">
+     <ul>
+        <li>
+          <img src="/img/cu.png" style="float: left;">
+          <p style="float: left;margin-top: 10px;color: white">+91-987654321 </p>
+        </li>
+        <li>
+          <p style="float: left;margin-top: 10px;color: white">&copy; 2020 RUBIX</p>
+        </li>
+        <li>
+          <img style="float: left;" src="/img/mail.png">
+          <p style="float: left;margin-top: 10px;color: white">KCPbihar@gmail.com</p>
+        </li>   
+      </ul>
+    </div>
+  </body>
+</html>

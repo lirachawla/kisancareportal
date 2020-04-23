@@ -1,0 +1,339 @@
+H<!DOCTYPE html>
+<html>
+<head>
+	<title>KCP</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function onButtonClick(){
+  document.getElementById('textInput').className="show";
+  document.getElementById('qw').className="show";
+  document.getElementById('qwer').className="show";
+  document.getElementById('qwert').className="show";
+  }
+  function onButtonClick1(){
+    document.getElementById('textInput1').className="show";
+  document.getElementById('qw1').className="show";
+  }
+  function onButtonClick2(){
+    document.getElementById('qw3').className="show";
+  }
+  function onButtonClick3(){
+    document.getElementById('qw4').className="show";
+  }
+
+  </script>
+    <style >
+      #dev{
+        font-family: Lexend Deca;
+        padding-top: 0;
+        float:left;
+        margin-top: 80px;
+       margin-left: 25px;
+         }
+      #im
+      {
+        float:left;
+      }
+      #tu
+      {
+        text-align: center;
+        margin-left: 210px;
+        font-family: sans-serif;
+        width: 200px;
+      }
+      #kl
+      {
+         margin-top: 61px;
+      }
+      #io
+      {
+        float: right;
+        margin-right: 20px;
+        margin-top: -110px;
+      }
+      .footer 
+      {
+        margin-top: 149px;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #004d1a;
+       }   
+      .footer li
+      {
+        color: rgba(255,255,255,.5);
+        text-decoration-color: rgba(255,255,255,.5);
+        font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+        list-style: none;
+        display: inline-block;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+      }
+      #e
+      {
+        color: black;text-shadow: 2px 2px 4px #000000;
+      }
+      #ty{
+        opacity: 0.7;
+        filter: alpha(opacity=70); /* For IE8 and earlier */
+      }
+
+      #ty:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+      }
+
+      .sidenav2 {
+      height: 1301px;
+      width: 245px;
+      position: relative;
+      
+      z-index: 1;
+      float: right; 
+      top: 0;
+      left: 0;
+      background-color: #76b852 !important;
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+
+      .sidenav2 a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      }
+
+      .sidenav2 a:hover {
+      color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav2 {padding-top: 15px;}
+        .sidenav2 a {font-size: 18px;}
+      }
+
+      .btn {
+        border: groove;
+        text-decoration-color: white;
+      }
+
+      /* On mouse-over */
+      .btn:hover {background: #eee;}
+
+      .CF {color: black; background-color: #ff6666; margin-left: 15px; margin-top: 10px;padding-left: 5px;padding-right: 5px;text-align: center;}
+      
+progress[value]::-webkit-progress-bar {
+ background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    
+}
+
+
+      progress[value] {
+        -webkit-appearance: none;
+   appearance: none;
+  width: 250px;
+  height: 20px;
+}
+
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+    </style>
+
+</head>
+<body>
+
+
+  <nav class="navbar fixed-top" style="background-color: #004d1a">
+
+<span class="navbar-text" style="color: white;text-shadow: 2px 2px 4px #000000;">
+   WELCOME
+  </span>
+  <ul class="navbar-nav" style="background-color: #004d1a">
+    <li class="nav-item">
+      <a class="nav-link" href="/logout_admin/" style="color: white;text-shadow: 2px 2px 4px #000000;">Logout</a>
+    </li>
+  </ul>
+</nav> 
+
+<div id="yu">
+    <img id="im" src="/img/jaikisan.png" alt="Kisan logo" width="140px" height="125px" style="margin-top: 50px ">
+    <h1 id="dev" style="margin-top: 4%;margin-left: 30%"><strong>Kisan Care Portal</strong></h1>
+    <h3 id="tu" style="margin-left: 43%">Govt. of Bihar</h3>
+    <img id="io" src="/img/pnb.png" alt="Bihar govt. logo" width="100px" height="100px">
+</div>
+
+<nav id="kl" class="navbar navbar-expand-sm " style="margin-top: 28px;background-color: #004d1a;color: #004d1a; text-decoration-color:#004d1a">
+  <a class="navbar-brand" href="index.html"><img src="/img/download.png"></a>
+  <ul class="navbar-nav" style="text-shadow: 2px 2px 4px #000000;">
+    <li class="nav-item">
+      <a class="nav-link" href="crops.html" style="color: white;margin-left: 600px;font-size: 20px;"><b>ADMIN PORTAL</b></a>
+    </li>
+    
+  </ul>
+
+</nav>
+
+<div class="sidenav2">
+        <button class="btn CF" onclick="onButtonClick()" ><b>ADD ANNOUNCEMENTS</b>&nbsp&nbsp&nbsp&nbsp</button>
+        <form action="{{url_for('main.add_ann')}}" method="post">
+        <div class="dropdown" >
+    <button class="hide" id="qwer" type="button" data-toggle="dropdown"style="margin-left: 31px;margin-top: 10px; background-color: white;color: black; "  onclick="onButtonClick2()">Districts
+    <span class="caret"></span></button>
+    <ul class="hide" id="qw3" >
+      <li><a style="font-size: 20px;color: black"href="#">Bhojpur</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Madhubani</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Patna</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Muzzafarpur</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="hide" id="qwert" type="button" data-toggle="dropdown"style="margin-left: 31px;margin-top: 10px; background-color: white;color: black; " onclick="onButtonClick3()">Crops
+    <span class="caret"></span></button>
+    <ul class="hide" id="qw4">
+      <li><a style="font-size: 20px;color: black"href="#">Rice</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Wheat</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Maize</a></li>
+      <li><a style="font-size: 20px;color: black"href="#">Others</a></li>
+    </ul>
+  </div>
+
+        <input class="hide" type="text" id="textInput" placeholder="Enter text here..." style="margin:0 auto;margin-top: 7px;text-align: left;padding: 0.4em;padding-bottom: 120px;"/>
+        <button name="ann" value="ann" class="hide" id="qw" type="Submit" onclick="onButtonClick()" style="margin-left: 25px;margin-top: 5px;">Submit</button></form>
+        <a style="color: black;padding-left: 0px; padding-top: 0px; padding-right: 0px; ">_________________________</a>
+        <button class="btn CF" onclick="onButtonClick1()"   ><b>SEND MESSAGE</b>&nbsp&nbsp&nbsp&nbsp</button>
+        <form action="{{url_for('main.send_msg')}}" method="post">
+        <input name="message" class="hide" type="text" id="textInput1" placeholder="Enter message here..." style="margin-left: 20px; margin-top: 7px;text-align: left;padding: 0.4em;padding-bottom: 120px;"/>
+        <button name="msg" value="msg" class="hide" id="qw1" type="Submit" onclick="onButtonClick1()" style="margin-left: 25px;margin-top: 5px;">Submit</button></form>
+        <a style="color: black;padding-left: 0px; padding-top: 0px; padding-right: 0px; ">_________________________</a>
+        </div>
+      </div>
+
+<div style="margin-top: 40px; margin-left: 50px">
+   <b>Crop-wise Data</b>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Farmer", "Number", { role: "style" } ],
+        ["Rice", {{ric}}, "#b87333"],
+        ["Wheat", {{whe}}, "silver"],
+        ["Maize", {{mai}}, "gold"],
+        ["Others", {{oth}}, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+
+
+
+
+</div>
+<br/><br/><br/><br/><br/>
+<div style="margin-top: 40px; margin-left: 50px">
+
+<b>District-wise Data</b>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["District", "Number of farmers", { role: "style" } ],
+        ["Bhojpur", {{bhoj}}, "#b87333"],
+        ["Madhubani", {{madh}}, "silver"],
+        ["Patna", {{patn}}, "gold"],
+        ["Muzzafarpur", {{muzz}}, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchartvalues"));
+      chart.draw(view, options);
+  }
+  </script>
+<div id="columnchartvalues" style="width: 900px; height: 300px;"></div>
+</div>
+<br><br><br><br><br><br>
+<progress max="100" value="{{s}}" style="margin-left: 50px;"></progress><a>&nbsp{{s}}%&nbsp&nbsp<b>Farmers completed sowing.</b></a><br><br><br>
+<progress max="100" value="{{m}}" style="margin-left: 50px;r"></progress><a>&nbsp{{m}}%&nbsp&nbsp<b>Farmers added fertilizers/manure.</b></a><br><br><br>
+<progress max="100" value="{{h}}" style="margin-left: 50px;"></progress><a>&nbsp{{h}}%&nbsp&nbsp<b>Farmers who completed harvesting.<b></a><br><br><br>
+<progress max="100" value="{{n}}" style="margin-left: 50px;"></progress><a>&nbsp{{n}}%&nbsp&nbsp<b>Crop failed.</b></a>
+
+<div class="footer" style="color: white;text-shadow: 2px 2px 4px #000000;">
+ <ul>
+    <li>
+      <img src="/img/cu.png" style="float: left;">
+      <p style="float: left;margin-top: 10px;color: white">+91-987654321 </p>
+    </li>
+    <li>
+      <p style="float: left;margin-top: 10px;color: white">&copy; 2020 RUBIX</p>
+    </li>
+    <li>
+      <img style="float: left;" src="/img/mail.png">
+     
+      <p style="float: left;margin-top: 10px;color: white">KCPbihar@gmail.com</p>
+    </li>
+    
+  </ul>
+</div>
+
+
+</body>
+</html>
